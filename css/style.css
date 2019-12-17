@@ -1,0 +1,17 @@
+.card {
+    width: 400px;
+    margin: 50px;
+}
+
+.row {
+    justify-content: space-around;
+}
+
+footer {
+    background-color: #343a40;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    color: white;
+    text-align: right;
+}

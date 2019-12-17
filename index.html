@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap example</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Graduaat programmeren</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Onze troeven</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link active" href="#" data-toggle="dropdown">Curriculum</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Programming Basics</a>
+                    <a class="dropdown-item" href="#">Programming Advanced</a>
+                    <a class="dropdown-item" href="#">Web Frontend Basics</a>
+                    <a class="dropdown-item" href="#">Databases</a>
+                    <a class="dropdown-item" href="#">Continuous Integration</a>
+                    <a class="dropdown-item" href="#">Basic IT Skills</a>
+                </div>
+            </li>
+        </ul>
+        <form class="form-inline d-none d-md-inline">
+            <input class="form-control mr-sm-2" placeholder="Zoek">
+            <button class="btn btn-outline-light" type="submit">Zoek</button>
+        </form>
+    </nav>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Programming Basics</h5>
+                    <h6 class="card-subtitle mb-2">Deboosere D.</h6>
+                    <p class="card-text">In deze module verkrijg je een grondig inzicht in de werking van het .Net Framework en leer je op een gestructureerde manier programma’s te ontwikkelen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Programming Advanced</h5>
+                    <h6 class="card-subtitle mb-2">Deboosere D.</h6>
+                    <p class="card-text">Deze module bouwt voort op de inzichten verworven in Programming basics.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Web Frontend Basics</h5>
+                    <h6 class="card-subtitle mb-2">Soete B.</h6>
+                    <p class="card-text">In de module Web Frontend Basics wordt de nadruk gelegd op het correct ontwerpen van online gebruikersomgevingen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Databases</h5>
+                    <h6 class="card-subtitle mb-2">Di Marco M.</h6>
+                    <p class="card-text">In de module Databases leer je hoe je een database moet opstellen en bevragen.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Basic IT Skills</h5>
+                    <h6 class="card-subtitle mb-2">Cools K.</h6>
+                    Web Frontend Basics 15
+                    <p class="card-text">In de module Basic IT Skills wordt nadruk gelegd op het logisch en procedureel denken, door eenvoudige uitwerkingen van basisbewerkingen op een computersysteem (getallenkennis).</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Continuous Integration</h5>
+                    <h6 class="card-subtitle mb-2">François J.</h6>
+                    <p class="card-text">In de module CI Basis leer je werken met het vrij gedistribueerd versiebeheer systeem genaamd Git. Deze module legt de basis voor het efficiënt samenwerken aan dezelfde programmacode.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer classe="page-footer">
+        <button class="btn btn-dark btn-sm" type="button" data-toggle="modal" data-target="#contactModal"> Contacteer ons </button>
+    </footer>
+
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog">
+            <form class="modal-content" method="POST" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contacteer ons</h5> <button type="button" class="close" data-dismiss="modal"> <span>&times;</span> </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="emailField">Email address</label>
+                        <input name="email" type="email" class="form-control" id="emailField" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="vakField">Opleidingsonderdeel</label>
+                        <select name="vak" class="form-control" id="vakField"> 
+                            <option>Programming Basics</option> 
+                            <option>Programming Advanced</option> 
+                            <option>Web Frontend Basics</option> 
+                            <option>Databases</option> 
+                            <option>Basic IT Skills</option> 
+                            <option>Continuous Integration</option> 
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="opmerkingenVak">Opmerkingen</label>
+                        <textarea name="opmerking" class="form-control" id="opmerkingenVak" rows="3"></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Sluit</button>
+                    <button type="submit" class="btn btn-primary">Verzend</button>
+                </div>
+        </div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
